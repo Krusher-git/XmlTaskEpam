@@ -1,0 +1,47 @@
+2021-04-20 04:50:53,795 ERROR c.k.x.v.DataValidator [main] Exception: cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.example.com/periodicals":someWrongData}'. One of '{"http://www.example.com/periodicals":title}' is expected.
+2021-04-20 04:50:59,334 ERROR c.k.x.v.DataValidator [main] Exception: cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.example.com/periodicals":someWrongData}'. One of '{"http://www.example.com/periodicals":title}' is expected.
+2021-04-20 05:10:16,042 ERROR c.k.x.b.PaperDomBuilder [main] C:\Users\WC\IdeaProjects\XmlTaskEpam\data\periodicals.xml (Системе не удается найти указанный путь)
+2021-04-20 05:30:46,597 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:32:51,624 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:34:16,189 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:37:31,965 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:39:59,327 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:42:30,042 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:44:26,877 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:48:11,220 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:51:26,501 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:53:15,899 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:54:19,831 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:55:15,562 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:58:40,688 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 05:58:40,716 INFO c.k.x.b.PaperDomBuilder [main] All Not Monthly papers were collected from xmlFile
+2021-04-20 06:00:35,040 ERROR c.k.x.b.PaperSaxBuilder [main] Error with parsing
+java.io.FileNotFoundException: C:\Users\WC\IdeaProjects\XmlTaskEpam\data\periodicals.xml (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:211) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:153) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:108) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1149) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:647) ~[?:?]
+	at com.kozich.xmltask.builder.PaperSaxBuilder.buildPeriodicals(PaperSaxBuilder.java:52) [classes/:?]
+	at com.kozich.xmltask.entity.Main.main(Main.java:11) [classes/:?]
+2021-04-20 06:02:03,654 WARN c.k.x.b.PaperSaxHandler [main] Current qName does not fit the condition
+2021-04-20 06:05:26,920 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 06:05:26,926 INFO c.k.x.b.PaperDomBuilder [main] All Not Monthly papers were collected from xmlFile
+2021-04-20 06:05:42,422 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 06:05:42,427 INFO c.k.x.b.PaperDomBuilder [main] All Not Monthly papers were collected from xmlFile
+2021-04-20 06:11:08,193 WARN c.k.x.b.PaperSaxHandler [main] Current qName does not fit the condition
+2021-04-20 06:11:58,218 WARN c.k.x.b.PaperSaxHandler [main] Current qName does not fit the condition
+2021-04-20 06:52:44,387 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 06:52:44,392 INFO c.k.x.b.PaperDomBuilder [main] All Not Monthly papers were collected from xmlFile
+2021-04-20 06:53:47,767 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 06:53:47,773 INFO c.k.x.b.PaperDomBuilder [main] All Not Monthly papers were collected from xmlFile
+2021-04-20 06:55:38,246 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 06:55:38,252 INFO c.k.x.b.PaperDomBuilder [main] All Not Monthly papers were collected from xmlFile

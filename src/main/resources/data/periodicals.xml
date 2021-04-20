@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<papers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.example.com/periodicals"
+        xsi:schemaLocation="http://www.example.com/periodicals ../schema/schema.xsd">
+    <monthly-periodical id="m1" source="www.Jjj.com">
+        <title>Daily Bugle</title>
+        <type>paper</type>
+        <chars>
+            <color>true</color>
+            <capacity>50</capacity>
+            <glossy>false</glossy>
+            <index>true</index>
+        </chars>
+        <monthly>true</monthly>
+        <date>2018-03-12</date>
+    </monthly-periodical>
+    <monthly-periodical id="m2">
+        <title>Paradise</title>
+        <type>paper</type>
+        <chars>
+            <color>false</color>
+            <capacity>33</capacity>
+            <glossy>false</glossy>
+            <index>false</index>
+        </chars>
+        <monthly>false</monthly>
+        <date>2021-02-05</date>
+    </monthly-periodical>
+    <monthly-periodical id="m3">
+        <title>Black Day</title>
+        <type>paper</type>
+        <chars>
+            <color>true</color>
+            <capacity>75</capacity>
+            <glossy>false</glossy>
+            <index>true</index>
+        </chars>
+        <monthly>true</monthly>
+        <date>2020-02-12</date>
+    </monthly-periodical>
+    <monthly-periodical id="m4" source="www.Green.com">
+        <title>Green</title>
+        <type>paper</type>
+        <chars>
+            <color>false</color>
+            <capacity>23</capacity>
+            <glossy>false</glossy>
+            <index>false</index>
+        </chars>
+        <monthly>false</monthly>
+        <date>2020-03-12</date>
+    </monthly-periodical>
+    <monthly-periodical id="m5">
+        <title>Pyramid</title>
+        <type>magazine</type>
+        <chars>
+            <color>false</color>
+            <capacity>43</capacity>
+            <glossy>true</glossy>
+            <index>false</index>
+        </chars>
+        <monthly>true</monthly>
+        <date>2020-07-12</date>
+    </monthly-periodical>
+    <monthly-periodical id="m6">
+        <title>Magazine</title>
+        <type>magazine</type>
+        <chars>
+            <color>false</color>
+            <capacity>31</capacity>
+            <glossy>true</glossy>
+            <index>true</index>
+        </chars>
+        <monthly>false</monthly>
+        <date>2020-07-12</date>
+    </monthly-periodical>
+    <monthly-periodical id="m7">
+        <title>Wall Street Journal</title>
+        <type>magazine</type>
+        <chars>
+            <color>true</color>
+            <capacity>53</capacity>
+            <glossy>true</glossy>
+            <index>true</index>
+        </chars>
+        <monthly>true</monthly>
+        <date>2020-07-12</date>
+    </monthly-periodical>
+    <monthly-periodical id="m8">
+        <title>Science</title>
+        <type>magazine</type>
+        <chars>
+            <color>false</color>
+            <capacity>45</capacity>
+            <glossy>false</glossy>
+            <index>true</index>
+        </chars>
+        <monthly>true</monthly>
+        <date>2020-07-12</date>
+    </monthly-periodical>
+    <not-monthly-periodical id="nm9">
+        <title>Energy</title>
+        <type>booklet</type>
+        <chars>
+            <color>true</color>
+            <capacity>5</capacity>
+            <glossy>true</glossy>
+            <index>false</index>
+        </chars>
+        <number>25</number>
+    </not-monthly-periodical>
+    <not-monthly-periodical id="nm10">
+        <title>Negative</title>
+        <type>booklet</type>
+        <chars>
+            <color>false</color>
+            <capacity>10</capacity>
+            <glossy>false</glossy>
+            <index>false</index>
+        </chars>
+        <number>12</number>
+    </not-monthly-periodical>
+    <not-monthly-periodical id="nm11">
+        <title>Evening</title>
+        <type>booklet</type>
+        <chars>
+            <color>true</color>
+            <capacity>15</capacity>
+            <glossy>true</glossy>
+            <index>false</index>
+        </chars>
+        <number>13</number>
+    </not-monthly-periodical>
+    <not-monthly-periodical id="nm12">
+        <title>Pennsylvania Today</title>
+        <type>booklet</type>
+        <chars>
+            <color>true</color>
+            <capacity>25</capacity>
+            <glossy>false</glossy>
+            <index>false</index>
+        </chars>
+        <number>16</number>
+    </not-monthly-periodical>
+    <not-monthly-periodical id="nm13">
+        <title>Weekly Bugle</title>
+        <type>paper</type>
+        <chars>
+            <color>true</color>
+            <capacity>50</capacity>
+            <glossy>false</glossy>
+            <index>false</index>
+        </chars>
+        <number>19</number>
+    </not-monthly-periodical>
+    <not-monthly-periodical id="nm14">
+        <title>Jet</title>
+        <type>paper</type>
+        <chars>
+            <color>false</color>
+            <capacity>10</capacity>
+            <glossy>false</glossy>
+            <index>true</index>
+        </chars>
+        <number>16</number>
+    </not-monthly-periodical>
+    <not-monthly-periodical id="nm15">
+        <title>Horizon</title>
+        <type>paper</type>
+        <chars>
+            <color>true</color>
+            <capacity>20</capacity>
+            <glossy>false</glossy>
+            <index>true</index>
+        </chars>
+        <number>14</number>
+    </not-monthly-periodical>
+    <not-monthly-periodical id="nm16">
+        <title>American</title>
+        <type>paper</type>
+        <chars>
+            <color>true</color>
+            <capacity>18</capacity>
+            <glossy>false</glossy>
+            <index>true</index>
+        </chars>
+        <number>20</number>
+    </not-monthly-periodical>
+</papers>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/periodicals"
+        xmlns:tns="http://www.example.com/periodicals"
+        elementFormDefault="qualified">
+    <element name="periodical" type="tns:periodical" abstract="true"/>
+    <element name="monthly-periodical" type="tns:monthlyPeriodical" substitutionGroup="tns:periodical"/>
+    <element name="not-monthly-periodical" type="tns:notMonthlyPeriodical" substitutionGroup="tns:periodical"/>
+
+    <element name="papers">
+        <complexType>
+            <sequence>
+                <element ref="tns:periodical"
+                         minOccurs="1"
+                         maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="periodical">
+        <sequence>
+            <element name="title" type="string"/>
+            <element name="type" type="tns:typePeriodical"/>
+            <element name="chars" type="tns:chars"/>
+        </sequence>
+        <attribute name="id" type="tns:idPaper" use="required"/>
+        <attribute name="source" type="string" use="optional" default="www.google.com"/>
+    </complexType>
+
+    <complexType name="monthlyPeriodical">
+        <complexContent>
+            <extension base="tns:periodical">
+                <sequence>
+                    <element name="monthly" type="boolean"/>
+                    <element name="date" type="date"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="notMonthlyPeriodical">
+        <complexContent>
+            <extension base="tns:periodical">
+                <sequence>
+                    <element name="number" type="positiveInteger"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="typePeriodical">
+        <restriction base="string">
+            <enumeration value="paper"/>
+            <enumeration value="magazine"/>
+            <enumeration value="booklet"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="chars">
+        <sequence>
+            <element name="color" type="boolean"/>
+            <element name="capacity" type="positiveInteger"/>
+            <element name="glossy" type="boolean"/>
+            <element name="index" type="boolean"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="idPaper">
+        <restriction base="ID">
+            <pattern value="\w{1,9}"/>
+        </restriction>
+    </simpleType>
+</schema>
