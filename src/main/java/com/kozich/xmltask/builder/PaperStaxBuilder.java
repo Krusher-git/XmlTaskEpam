@@ -73,7 +73,7 @@ public class PaperStaxBuilder extends AbstractPaperBuilder {
         String source = reader.getAttributeValue(null, PaperXmlTag.SOURCE.getValue());
 
         currentPeriodical.setId(id);
-        if (!source.isBlank()) {
+        if (source != null) {
             currentPeriodical.setSource(source);
         }
         String name;
@@ -87,6 +87,7 @@ public class PaperStaxBuilder extends AbstractPaperBuilder {
                     }
                     PaperXmlTag currentTag = PaperXmlTag.valueOf(name.toUpperCase());
                     insertData(reader, currentTag, currentPeriodical);
+                    break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
                     if (name.equals(PaperXmlTag.CHARS.getValue())) {
@@ -95,6 +96,7 @@ public class PaperStaxBuilder extends AbstractPaperBuilder {
                     if (name.equals(PaperXmlTag.MONTHLY_PERIODICAL.getValue()) || name.equals(PaperXmlTag.NOT_MONTHLY_PERIODICAL.getValue())) {
                         return;
                     }
+                    break;
             }
         }
     }
@@ -110,13 +112,11 @@ public class PaperStaxBuilder extends AbstractPaperBuilder {
                 break;
             case MONTHLY:
                 MonthlyPeriodical monthlyPeriodical = (MonthlyPeriodical) periodical;
-                monthlyPeriodical.setDate(LocalDate.parse(data));
+                monthlyPeriodical.setMonthly(Boolean.parseBoolean(data));
                 break;
             case NUMBER:
                 NotMonthlyPeriodical notMonthlyPeriodical = (NotMonthlyPeriodical) periodical;
                 notMonthlyPeriodical.setNumber(Integer.parseInt(data));
-                break;
-            case CHARS:
                 break;
             case CAPACITY:
                 chars.setCapacity(Integer.parseInt(data));
@@ -131,8 +131,7 @@ public class PaperStaxBuilder extends AbstractPaperBuilder {
                 chars.setColor(Boolean.parseBoolean(data));
                 break;
             default:
-                throw new EnumConstantNotPresentException(
-                        currentTag.getDeclaringClass(), currentTag.name());
+                break;
 
         }
     }

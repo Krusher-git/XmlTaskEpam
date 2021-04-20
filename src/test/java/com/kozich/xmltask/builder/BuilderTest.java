@@ -22,4 +22,13 @@ public class BuilderTest {
         int actual = builder.getPeriodicals().size();
         Assert.assertEquals(actual, expected);
     }
+
+    @Test
+    public void PaperStaxBuilderTest() throws PaperException {
+        int expected = 16;
+        AbstractPaperBuilder builder = PaperBuilderFactory.createPaperBuilder("STAX");
+        builder.buildPeriodicals("data/periodicalstest.xml");
+        int actual = builder.getPeriodicals().size();
+        Assert.assertEquals(actual, expected);
+    }
 }

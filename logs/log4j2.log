@@ -45,3 +45,5 @@ java.io.FileNotFoundException: C:\Users\WC\IdeaProjects\XmlTaskEpam\data\periodi
 2021-04-20 06:53:47,773 INFO c.k.x.b.PaperDomBuilder [main] All Not Monthly papers were collected from xmlFile
 2021-04-20 06:55:38,246 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
 2021-04-20 06:55:38,252 INFO c.k.x.b.PaperDomBuilder [main] All Not Monthly papers were collected from xmlFile
+2021-04-20 07:28:41,518 INFO c.k.x.b.PaperDomBuilder [main] All Monthly papers were collected from xmlFile
+2021-04-20 07:28:41,523 INFO c.k.x.b.PaperDomBuilder [main] All Not Monthly papers were collected from xmlFile
